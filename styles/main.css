@@ -468,6 +468,7 @@ ul {
   margin: 0;
   display: none;
   padding-bottom: 0;
+  padding-top: 10px;
 }
 
 .navbar .hiddenMenu:hover {
