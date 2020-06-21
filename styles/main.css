@@ -581,6 +581,8 @@ ul {
 .main .slider {
   max-width: 100%;
   margin-bottom: 0 !important;
+  position: relative;
+  top: -16px;
 }
 
 .main .slider .slide1 {
@@ -761,6 +763,12 @@ ul {
   font-weight: bold;
 }
 
+.menu__nav_item .fa:before {
+  font-size: 22px;
+  position: relative;
+  top: 4px;
+}
+
 .menu__nav_item:hover {
   color: #000;
 }
@@ -899,7 +907,8 @@ ul {
   margin-right: -0.9375rem;
   max-width: 1140px;
   position: relative;
-  margin: 30px auto;
+  margin: 0px auto;
+  align-items: center;
 }
 
 .advCont .advItem {
@@ -911,7 +920,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0px auto 30px;
+  margin: 0px auto 7px;
 }
 
 .advCont .advItem__title {
@@ -1277,12 +1286,6 @@ ul {
   }
 }
 
-@media only screen and (max-width: 550px) {
-  .advCont .advItem {
-    width: calc(100% - 1.875rem);
-  }
-}
-
 @media screen and (max-width: 550px) {
   .text {
     font-size: 15px;
@@ -1306,6 +1309,17 @@ ul {
 
   .slick-dots .fa-circle:before {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .advCont .advItem {
+    width: calc(100% - 1.875rem);
+    margin-bottom: 30px !important;
+  }
+
+  .advCont .advItem:last-child {
+    margin-bottom: 7px !important;
   }
 }
 
